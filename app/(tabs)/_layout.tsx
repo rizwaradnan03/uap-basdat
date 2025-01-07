@@ -11,6 +11,14 @@ const TabsLayout = () => {
                 title: 'User',
                 tabBarIcon: () => <FontAwesome size={28} name='user' color={'blue'} />
             }} />
+            <Tabs.Screen name='book' options={{
+                title: 'Book',
+                tabBarIcon: () => <FontAwesome size={28} name='book' color={'blue'} />
+            }} />
+            <Tabs.Screen name='bookedBook' options={{
+                title: 'Booked Book',
+                tabBarIcon: () => <FontAwesome size={28} name='bookmark' color={'blue'} />
+            }} />
         </Tabs>
     </>
   )

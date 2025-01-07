@@ -13,10 +13,12 @@ export interface BookInterface {
     stock: number;
 }
 
-export interface BookedBook {
+export interface BookedBookInterface {
     id: string;
     bookId: string;
     userId: string;
     borrowingDate: Date;
     dueDate: Date;
+    Books?: BookInterface;
+    User?: UserInterface;
 }
